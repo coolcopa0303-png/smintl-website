@@ -2121,7 +2121,7 @@ body.inner-page .hamburger span { background: var(--text); }
 .hm-about-badge-year { font-family: var(--font-head); font-size: 2.25rem; font-weight: 800; line-height: 1.1; }
 .hm-about-badge-place { font-size: 0.875rem; color: rgba(255,255,255,0.85); }
 .hm-about-text .hm-lead { margin-bottom: 28px; }
-.hm-values { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 28px; }
+.hm-values { display: grid; grid-template-columns: repeat(3, 1fr); }
 .hm-value { padding: 0 20px; color: var(--accent-dark); }
 .hm-value:first-child { padding-left: 0; }
 .hm-value + .hm-value { border-left: 1px solid var(--border); }
