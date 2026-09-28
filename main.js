@@ -155,15 +155,16 @@ initScrollReveal();
 // ======================== COUNT-UP ========================
 function countUp(el, target, delay = 0) {
   const duration = 1500;
+  const fmt = n => ('plain' in el.dataset ? String(n) : n.toLocaleString());
   setTimeout(() => {
     const startTime = performance.now();
     function update(now) {
       const elapsed = now - startTime;
-      const progress = Math.min(elapsed / duration, 1);
+      const progress = Math.max(0, Math.min(elapsed / duration, 1));
       const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      el.textContent = Math.floor(eased * target).toLocaleString();
+      el.textContent = fmt(Math.floor(eased * target));
       if (progress < 1) requestAnimationFrame(update);
-      else el.textContent = target.toLocaleString();
+      else el.textContent = fmt(target);
     }
     requestAnimationFrame(update);
   }, delay);

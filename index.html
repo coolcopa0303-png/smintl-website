@@ -51,293 +51,297 @@
   </div>
 
   <!-- ======================== HERO ======================== -->
-  <section class="hero" id="home">
+  <section class="hero hm-hero" id="home">
     <div class="hero-bg">
       <img src="hero1.jpg" alt="Global logistics and shipping" class="hero-bg-img" />
-      <div class="hero-overlay"></div>
-      <div class="hero-glow"></div>
+      <div class="hero-overlay hm-hero-overlay"></div>
     </div>
 
-    <div class="container hero-content">
-      <div class="hero-eyebrow reveal" data-zh='<span class="tag-dot"></span>自2013年起 · 纽约 &amp; 加利福尼亚'>
-        <span class="tag-dot"></span>
-        Trusted Since 2013 · New York & California
-      </div>
-      <h1 class="hero-title reveal" data-zh='您的全球货运<br /><span class="hero-title-accent">合作伙伴。</span>'>
-        Your Global Freight<br />
-        <span class="hero-title-accent">Partner.</span>
-      </h1>
-      <p class="hero-desc reveal" data-zh="作为国际物流服务提供商，我们始终如一的目标是为贸易界提供最优质、最个性化的服务。">
-        As an international logistics service provider, our never-changing goal is to provide<br class="hide-mobile" />
-        the best and most personalized service to the trade community.
-      </p>
+    <div class="container hero-content hm-hero-content">
+      <div class="hm-hero-eyebrow reveal" data-zh="自2013年起 · 纽约 &amp; 加利福尼亚">Trusted Since 2013 · New York &amp; California</div>
+      <h1 class="hm-hero-title reveal" data-zh='您的全球货运<span class="hm-hero-accent">合作伙伴。</span>'>Your Global Freight <span class="hm-hero-accent">Partner.</span></h1>
+      <p class="hm-hero-desc reveal" data-zh="作为国际物流服务提供商，我们始终如一的目标是为贸易界提供最优质、最个性化的服务。">As an international logistics service provider, our never-changing goal is to provide the best and most personalized service to the trade community.</p>
 
-      <div class="hero-track-block reveal">
-        <form class="hero-track-form" onsubmit="handleHeroTrack(event)">
-          <div class="hero-track-field">
-            <input type="text" id="heroShipmentNumber" class="hero-track-input" placeholder="SHIPMENT NUMBER" aria-label="Shipment Number" data-zh-placeholder="货运单号" />
-          </div>
-          <div class="hero-track-field hero-track-field-row">
-            <input type="text" id="heroCustomerCode" class="hero-track-input" placeholder="CUSTOMER CODE" aria-label="Customer Code" data-zh-placeholder="客户代码" />
-            <button type="submit" class="hero-track-btn" data-zh="追踪">TRACK</button>
-          </div>
+      <div class="hm-track reveal">
+        <form class="hm-track-form" onsubmit="handleHeroTrack(event)">
+          <input type="text" id="heroShipmentNumber" class="hero-track-input" placeholder="SHIPMENT NUMBER" aria-label="Shipment Number" data-zh-placeholder="货运单号" />
+          <input type="text" id="heroCustomerCode" class="hero-track-input" placeholder="CUSTOMER CODE" aria-label="Customer Code" data-zh-placeholder="客户代码" />
+          <button type="submit" class="hero-track-btn hm-track-btn" data-zh="追踪">TRACK</button>
         </form>
         <div id="heroTrackResult" class="hero-track-result" hidden></div>
       </div>
-
-      <div class="hero-services reveal">
-        <a href="freight-forwarding.html" class="hero-service-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19.5 2.5S18 2 16.5 3.5L13 7 4.8 5.2a1 1 0 00-.9.3L2 7.5l4 2 .5.5 2 4 .5.5 2 4 2-1.9a1 1 0 00.3-.9z"/></svg>
-          <span data-zh="空运">Air Freight</span>
-        </a>
-        <a href="freight-forwarding.html" class="hero-service-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2.4 2.4 0 002 1h16a2.4 2.4 0 002-1M2 20V10l10-7 10 7v10M12 20v-5a2 2 0 00-4 0v5"/></svg>
-          <span data-zh="海运">Ocean Freight</span>
-        </a>
-        <a href="intermodal.html" class="hero-service-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          <span data-zh="多式联运">Intermodal</span>
-        </a>
-        <a href="custom-brokerage.html" class="hero-service-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
-          <span data-zh="报关">Customs</span>
-        </a>
-        <a href="warehouse.html" class="hero-service-item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          <span data-zh="仓储">Warehouse</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
     </div>
   </section>
+
+  <!-- ======================== SERVICE BAR ======================== -->
+  <nav class="hm-svcbar" aria-label="Services">
+    <div class="container hm-svcbar-inner">
+      <a href="freight-forwarding.html" class="hm-svcbar-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19.5 2.5S18 2 16.5 3.5L13 7 4.8 5.2a1 1 0 00-.9.3L2 7.5l4 2 .5.5 2 4 .5.5 2 4 2-1.9a1 1 0 00.3-.9z"/></svg>
+        <span data-zh="空运">Air Freight</span>
+      </a>
+      <a href="freight-forwarding.html" class="hm-svcbar-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0021 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 00-2-2H7a2 2 0 00-2 2v6"/><path d="M12 10v4M12 2v3"/></svg>
+        <span data-zh="海运">Ocean Freight</span>
+      </a>
+      <a href="intermodal.html" class="hm-svcbar-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span data-zh="多式联运">Intermodal</span>
+      </a>
+      <a href="custom-brokerage.html" class="hm-svcbar-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+        <span data-zh="报关">Customs</span>
+      </a>
+      <a href="warehouse.html" class="hm-svcbar-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-zh="仓储">Warehouse</span>
+      </a>
+    </div>
+  </nav>
 
   <!-- ======================== STATS ======================== -->
-  <section class="stats-section">
-    <div class="container">
-      <div class="grid-stats">
-        <div class="stat-item">
-          <div class="stat-number"><span class="count-up" data-end="2013">0</span></div>
-          <div class="stat-label" data-zh="公司成立">Company Founded</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number"><span class="count-up" data-end="500000">0</span>+</div>
-          <div class="stat-label" data-zh="年集装箱运输量">Annual TEU Volume</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number"><span class="count-up" data-end="600">0</span>+</div>
-          <div class="stat-label" data-zh="全球合作伙伴">Global Partners</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number"><span class="count-up" data-end="7000000">0</span>+</div>
-          <div class="stat-label" data-zh="卡车运送里程">KM Trucking Distance</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================== SERVICES OVERVIEW ======================== -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow" data-zh="我们的服务">Our Services</span>
-        <h2 data-zh="全面物流解决方案">Complete Logistics Solutions</h2>
-        <p class="section-desc" data-zh="从空运、海运到清关、多式联运及仓储——我们负责您供应链的每一个环节。">From air and ocean freight to customs clearance, intermodal trucking, and warehousing — we handle every step of your supply chain.</p>
-      </div>
-
-      <div class="home-services-grid stagger-reveal">
-        <a href="freight-forwarding.html" class="home-svc-card">
-          <div class="home-svc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19.5 2.5S18 2 16.5 3.5L13 7 4.8 5.2a1 1 0 00-.9.3L2 7.5l4 2 .5.5 2 4 .5.5 2 4 2-1.9a1 1 0 00.3-.9z"/></svg>
-          </div>
-          <div class="home-svc-title" data-zh="空运">Air Freight</div>
-          <p class="home-svc-desc" data-zh="具有竞争力的价格、急件特快、门到门配送及全程报关，覆盖全球各地时效航空货物。">Competitive pricing, expedited service, door-to-door delivery, and full customs clearance for time-sensitive air cargo worldwide.</p>
-          <span class="home-svc-link" data-zh='了解详情 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'>Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-
-        <a href="freight-forwarding.html" class="home-svc-card">
-          <div class="home-svc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2.4 2.4 0 002 1h16a2.4 2.4 0 002-1M2 20V10l10-7 10 7v10M12 20v-5a2 2 0 00-4 0v5"/></svg>
-          </div>
-          <div class="home-svc-title" data-zh="海运">Ocean Freight</div>
-          <p class="home-svc-desc" data-zh="整箱/拼箱、进出口、冷藏及干货、项目货物及全套单证服务，满足所有海运需求。">FCL & LCL, import & export, refrigerated and dry van, project cargo, and full documentation support for all ocean shipments.</p>
-          <span class="home-svc-link" data-zh='了解详情 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'>Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-
-        <a href="custom-brokerage.html" class="home-svc-card">
-          <div class="home-svc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
-          </div>
-          <div class="home-svc-title" data-zh="报关行">Custom Brokerage</div>
-          <p class="home-svc-desc" data-zh="ABI电子申报、ISF处理、FDA/DOT/EPA/USDA申报、海关保函及全面合规管理。">ABI electronic filing, ISF processing, FDA/DOT/EPA/USDA declarations, customs bonds, and full regulatory compliance management.</p>
-          <span class="home-svc-link" data-zh='了解详情 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'>Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-
-        <a href="intermodal.html" class="home-svc-card">
-          <div class="home-svc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          </div>
-          <div class="home-svc-title" data-zh="多式联运">Intermodal Trucking</div>
-          <p class="home-svc-desc" data-zh="拖柜、整车、平板、超规货物、危品、当日服务及美国全境门到门铁路运输。">Drayage, truck load, flatbeds, oversized cargo, hazmat, same-day service, and door-to-door rail across the United States.</p>
-          <span class="home-svc-link" data-zh='了解详情 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'>Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-
-        <a href="warehouse.html" class="home-svc-card">
-          <div class="home-svc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <div class="home-svc-title" data-zh="仓储与物流">Warehouse & Logistics</div>
-          <p class="home-svc-desc" data-zh="LAX、JFK、DFW战略仓储，提供进出仓、贴标、重新包装、拣选打包、UPS/FedEx配送。">Strategic locations at LAX, JFK, and DFW. Inbound/outbound, labeling, re-packing, pick & pack, UPS/FedEx distribution.</p>
-          <span class="home-svc-link" data-zh='了解详情 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'>Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-
-        <a href="https://small.senmartintl.com/login" target="_blank" rel="noopener" class="home-svc-card">
-          <div class="home-svc-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-          </div>
-          <div class="home-svc-title" data-zh="小货运输">Small Freight</div>
-          <p class="home-svc-desc" data-zh="LTL运输、小包裹快递、整合服务、UPS快递及FedEx货运，适合小批量货物发运。">LTL shipping, small parcel and courier delivery, consolidation services, UPS Ground and FedEx Freight for smaller consignments.</p>
-          <span class="home-svc-link" data-zh='了解详情 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'>Learn More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================== ABOUT PREVIEW ======================== -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="grid-2col">
-        <div class="about-text">
-          <span class="eyebrow reveal" data-zh="关于我们">About Us</span>
-          <h2 class="reveal" data-zh="以信任为基础，<br />以精准为驱动">Built on Relationships,<br />Driven by Precision</h2>
-          <p class="reveal" data-zh="Sen Mart International成立于2013年，致力于为每位客户提供个性化服务。创新的运营模式使公司迅速取得成功，并在美国市场稳步发展。">Sen Mart International was founded in 2013 with a mission to provide personalized service to every client. Innovative operational techniques enabled almost immediate success and steady growth across the US market.</p>
-          <p class="reveal" data-zh="我们与客户建立了长期且互利共赢的合作关系。我们深入了解您的业务，为您提供量身定制的完整服务。">We have established a record of building long-term and mutually beneficial relationships with our clients. We take time to understand your business, and offer complete, tailored service to your exact requirements.</p>
-
-          <div class="about-values stagger-reveal">
-            <div class="about-value">
-              <div class="about-value-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-              </div>
-              <div>
-                <div class="about-value-title" data-zh="长期合作伙伴关系">Long-Term Partnerships</div>
-                <div class="about-value-desc" data-zh="客户成长，我们共同成长">We grow when our clients grow</div>
-              </div>
-            </div>
-            <div class="about-value">
-              <div class="about-value-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <div class="about-value-title" data-zh="全年无休">24/7/365 Availability</div>
-                <div class="about-value-desc" data-zh="随时随地为您提供支持">Always reachable when you need us</div>
-              </div>
-            </div>
-            <div class="about-value">
-              <div class="about-value-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-              </div>
-              <div>
-                <div class="about-value-title" data-zh="全球网络">Global Network</div>
-                <div class="about-value-desc" data-zh="遍布全球的合作伙伴与代理">Partners and agencies worldwide</div>
-              </div>
-            </div>
-          </div>
-          <a href="about.html" class="btn-primary reveal" style="margin-top:32px; width:fit-content;" data-zh="了解我们的故事">Learn Our Story</a>
-        </div>
-
-        <div class="about-visual reveal">
-          <div class="about-img-wrap">
-            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=900&q=80" alt="Freight containers at port" class="about-img" loading="lazy" />
-            <div class="about-badge">
-              <div class="about-badge-number">2013</div>
-              <div class="about-badge-label">Founded</div>
-            </div>
-          </div>
-          <div class="about-img-secondary">
-            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=600&q=80" alt="Air cargo logistics" loading="lazy" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================== CTA BAND ======================== -->
-  <section class="cta-band">
-    <div class="container">
-      <div class="cta-band-inner">
+  <section class="hm-stats">
+    <div class="container hm-stats-grid">
+      <div class="hm-stat">
+        <svg class="hm-stat-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg>
         <div>
-          <h2 data-zh="准备好运送您的货物了吗？">Ready to Move Your Cargo?</h2>
-          <p data-zh="获取物流专家的个性化报价，我们将在24小时内回复。">Get a personalized quote from our logistics experts. We respond within 24 hours.</p>
+          <div class="hm-stat-number"><span class="count-up" data-end="2013" data-plain>0</span></div>
+          <div class="hm-stat-label" data-zh="公司成立">Company Founded</div>
         </div>
-        <div class="cta-band-actions">
-          <a href="contact.html" class="btn-primary" data-zh="获取报价">Get a Quote</a>
-          <a href="tel:5169620966" class="btn-ghost">516-962-0966</a>
+      </div>
+      <div class="hm-stat">
+        <svg class="hm-stat-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l10-5 10 5"/><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M7 11v7M10.5 11v7M13.5 11v7M17 11v7"/></svg>
+        <div>
+          <div class="hm-stat-number"><span class="count-up" data-end="500000">0</span>+</div>
+          <div class="hm-stat-label" data-zh="年集装箱运输量">Annual TEU Volume</div>
         </div>
+      </div>
+      <div class="hm-stat">
+        <svg class="hm-stat-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <div>
+          <div class="hm-stat-number"><span class="count-up" data-end="600">0</span>+</div>
+          <div class="hm-stat-label" data-zh="全球合作伙伴">Global Partners</div>
+        </div>
+      </div>
+      <div class="hm-stat">
+        <svg class="hm-stat-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <div>
+          <div class="hm-stat-number"><span class="count-up" data-end="7000000">0</span>+</div>
+          <div class="hm-stat-label" data-zh="卡车运送里程">KM Trucking Distance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section class="section hm-services" id="services">
+    <div class="container">
+      <div class="hm-section-head reveal">
+        <div>
+          <span class="hm-eyebrow" data-zh="我们的服务">Our Services</span>
+          <h2 class="hm-h2" data-zh="全面物流解决方案">Complete Logistics Solutions</h2>
+          <p class="hm-lead" data-zh="从空运、海运到清关、多式联运及仓储——我们负责您供应链的每一个环节。">From air and ocean freight to customs clearance, intermodal trucking, and warehousing — we handle every step of your supply chain.</p>
+        </div>
+        <a href="freight-forwarding.html" class="hm-link-underline"><span data-zh="查看全部服务">View All Services</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+
+      <div class="hm-svc-grid stagger-reveal">
+        <a href="freight-forwarding.html" class="hm-svc-card">
+          <div class="hm-svc-img"><img src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=700&q=75" alt="Air freight cargo plane" loading="lazy" /></div>
+          <div class="hm-svc-body">
+            <svg class="hm-svc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19.5 2.5S18 2 16.5 3.5L13 7 4.8 5.2a1 1 0 00-.9.3L2 7.5l4 2 .5.5 2 4 .5.5 2 4 2-1.9a1 1 0 00.3-.9z"/></svg>
+            <div>
+              <h3 class="hm-svc-title" data-zh="空运">Air Freight</h3>
+              <p class="hm-svc-desc" data-zh="经济可靠的空运服务，专为时效性货物打造。">Reliable and cost-effective air freight solutions for time-sensitive cargo.</p>
+              <span class="hm-svc-link"><span data-zh="了解详情">Learn More</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="freight-forwarding.html" class="hm-svc-card">
+          <div class="hm-svc-img"><img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=700&q=75" alt="Ocean freight shipping containers" loading="lazy" /></div>
+          <div class="hm-svc-body">
+            <svg class="hm-svc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0021 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 00-2-2H7a2 2 0 00-2 2v6"/><path d="M12 10v4M12 2v3"/></svg>
+            <div>
+              <h3 class="hm-svc-title" data-zh="海运">Ocean Freight</h3>
+              <p class="hm-svc-desc" data-zh="整箱及拼箱服务，通达全球各大目的港。">Full container and LCL services to global destinations.</p>
+              <span class="hm-svc-link"><span data-zh="了解详情">Learn More</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="custom-brokerage.html" class="hm-svc-card">
+          <div class="hm-svc-img"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=75" alt="Customs documentation and compliance" loading="lazy" /></div>
+          <div class="hm-svc-body">
+            <svg class="hm-svc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+            <div>
+              <h3 class="hm-svc-title" data-zh="报关行">Custom Brokerage</h3>
+              <p class="hm-svc-desc" data-zh="专业清关服务，合规高效。">Expert customs clearance with compliance and efficiency.</p>
+              <span class="hm-svc-link"><span data-zh="了解详情">Learn More</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="intermodal.html" class="hm-svc-card">
+          <div class="hm-svc-img"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=75" alt="Intermodal trucking and containers" loading="lazy" /></div>
+          <div class="hm-svc-body">
+            <svg class="hm-svc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <div>
+              <h3 class="hm-svc-title" data-zh="多式联运">Intermodal Trucking</h3>
+              <p class="hm-svc-desc" data-zh="覆盖美国全境的无缝多式联运方案。">Seamless intermodal solutions across the United States.</p>
+              <span class="hm-svc-link"><span data-zh="了解详情">Learn More</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="warehouse.html" class="hm-svc-card">
+          <div class="hm-svc-img"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=700&q=75" alt="Warehouse operations and logistics" loading="lazy" /></div>
+          <div class="hm-svc-body">
+            <svg class="hm-svc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <div>
+              <h3 class="hm-svc-title" data-zh="仓储与物流">Warehouse &amp; Logistics</h3>
+              <p class="hm-svc-desc" data-zh="灵活的仓储服务及增值物流服务。">Flexible warehousing and value-added logistics services.</p>
+              <span class="hm-svc-link"><span data-zh="了解详情">Learn More</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://small.senmartintl.com/login" target="_blank" rel="noopener" class="hm-svc-card">
+          <div class="hm-svc-img"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=75" alt="Small freight and parcel delivery" loading="lazy" /></div>
+          <div class="hm-svc-body">
+            <svg class="hm-svc-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            <div>
+              <h3 class="hm-svc-title" data-zh="小货运输">Small Freight</h3>
+              <p class="hm-svc-desc" data-zh="为您的业务提供零担及小货运输方案。">LTL and small freight solutions for your business needs.</p>
+              <span class="hm-svc-link"><span data-zh="了解详情">Learn More</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="section hm-about">
+    <div class="container hm-about-grid">
+      <div class="hm-about-visual reveal">
+        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1000&q=80" alt="Trucks and containers at a port terminal" loading="lazy" />
+        <div class="hm-about-badge">
+          <span class="hm-about-badge-kicker" data-zh="成立于">Founded in</span>
+          <span class="hm-about-badge-year">2013</span>
+          <span class="hm-about-badge-place" data-zh="纽约 &amp; 加利福尼亚">New York &amp; California</span>
+        </div>
+      </div>
+
+      <div class="hm-about-text">
+        <span class="hm-eyebrow reveal" data-zh="关于我们">About Us</span>
+        <h2 class="hm-h2 reveal" data-zh="以信任为基础，<br />以精准为驱动">Built on Relationships,<br />Driven by Precision</h2>
+        <p class="hm-lead reveal" data-zh="Sen Mart International 成立于2013年，秉持一个简单的信念——物流不仅是运输货物，更关乎人。我们致力于提供可靠、高效、个性化的物流解决方案，与客户建立长期互利的合作关系。">Sen Mart International was founded in 2013 with a simple belief — logistics is more than moving cargo, it's about people. We are committed to building long-term and mutually beneficial relationships with our clients by providing reliable, efficient and personalized logistics solutions.</p>
+
+        <div class="hm-values stagger-reveal">
+          <div class="hm-value">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17l2 2a1 1 0 003-3"/><path d="M14 14l2.5 2.5a1 1 0 003-3l-3.88-3.88a3 3 0 00-4.24 0l-.88.88a1 1 0 11-3-3l2.81-2.81a5.79 5.79 0 017.06-.87l.47.28a2 2 0 001.42.25L21 4"/><path d="M21 3l1 11h-2"/><path d="M3 3L2 14l6.5 6.5a1 1 0 003-3"/><path d="M3 4h8"/></svg>
+            <div class="hm-value-title" data-zh="长期合作伙伴关系">Long-Term Partnerships</div>
+            <div class="hm-value-desc" data-zh="客户成长，我们共同成长。">We grow when our clients grow.</div>
+          </div>
+          <div class="hm-value">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="hm-value-title" data-zh="全年无休">24/7/365 Availability</div>
+            <div class="hm-value-desc" data-zh="随时随地为您提供支持。">Always reachable when you need us.</div>
+          </div>
+          <div class="hm-value">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            <div class="hm-value-title" data-zh="全球网络">Global Network</div>
+            <div class="hm-value-desc" data-zh="遍布全球的合作伙伴与代理。">Partners and agencies worldwide.</div>
+          </div>
+        </div>
+
+        <a href="about.html" class="hm-btn-navy reveal"><span data-zh="了解我们的故事">Learn Our Story</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="hm-cta">
+    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=70" alt="" class="hm-cta-bg" loading="lazy" />
+    <div class="container hm-cta-inner">
+      <div>
+        <h2 data-zh="准备好运送您的货物了吗？">Ready to Move Your Cargo?</h2>
+        <p data-zh="获取物流专家的个性化报价，我们将在24小时内回复。">Get a personalized quote from our logistics experts. We respond within 24 hours.</p>
+      </div>
+      <div class="hm-cta-actions">
+        <a href="contact.html" class="hm-btn-gold"><span data-zh="获取报价">Get a Quote</span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="tel:5169620966" class="hm-cta-phone">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          516-962-0966
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ======================== NETWORK ======================== -->
-  <section class="section section-dark">
+  <section class="section hm-network">
     <div class="container">
-      <div class="section-header reveal section-header-light">
-        <span class="eyebrow eyebrow-light" data-zh="我们的网络">Our Network</span>
-        <h2 class="text-white" data-zh="美国东西海岸全覆盖">Coast to Coast Coverage</h2>
-        <p class="section-desc text-white-70" data-zh="三个战略办公室及三个仓储设施，服务覆盖美国全境及全球。">Two strategic office locations and three warehouse facilities serving the entire United States and beyond.</p>
+      <div class="reveal">
+        <span class="hm-eyebrow" data-zh="我们的网络">Our Network</span>
+        <h2 class="hm-h2" data-zh="美国东西海岸全覆盖">Coast to Coast Coverage</h2>
+        <p class="hm-lead" data-zh="两个战略办公室及三个仓储设施，服务覆盖美国全境及全球。">Two strategic office locations and three warehouse facilities serving the entire United States and beyond.</p>
       </div>
 
-      <div class="offices-grid stagger-reveal">
-        <div class="office-card">
-          <div class="office-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div class="office-region" data-zh="纽约办公室">New York Office</div>
-          <div class="office-address">12909 26th Ave Ste 305<br />Flushing, NY 11354</div>
-          <div class="office-contacts">
-            <a href="tel:5169620966" class="office-contact-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18a2 2 0 012-2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 6.91a16 16 0 006.72 6.72l.71-.71a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              516-962-0966
-            </a>
-            <div class="office-contact-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              FAX: 718-732-2465
+      <div class="hm-network-grid">
+        <div class="hm-map reveal" aria-hidden="true">
+          <svg viewBox="0 0 510 280" role="img">
+            <path class="hm-map-land" d="M20.7 31.0 L36.2 25.0 L262.6 25.0 L265.8 21.0 L308.5 35.0 L350.3 50.0 L366.7 62.0 L367.5 85.0 L361.8 95.0 L395.4 87.0 L415.9 79.0 L428.2 65.0 L456.9 65.0 L469.2 48.0 L487.2 44.0 L493.8 67.0 L469.2 78.0 L464.3 89.0 L469.2 97.0 L456.9 102.0 L437.2 109.0 L436.4 119.0 L428.2 127.0 L420.8 145.0 L424.1 162.0 L415.9 168.0 L399.5 177.0 L380.6 194.0 L375.7 210.0 L382.3 230.0 L387.2 247.0 L383.9 263.0 L378.2 264.0 L372.4 250.0 L365.1 235.0 L364.2 223.0 L354.4 215.0 L343.7 218.0 L333.9 211.0 L321.6 211.0 L308.5 213.0 L310.1 224.0 L301.1 224.0 L284.7 219.0 L272.4 219.0 L264.2 223.0 L246.2 237.0 L244.5 256.0 L230.6 251.0 L220.7 234.0 L211.7 217.0 L198.6 225.0 L186.3 219.0 L169.9 197.0 L156.0 197.0 L156.0 202.0 L132.2 202.0 L101.8 190.0 L83.0 190.0 L71.5 175.0 L54.3 169.0 L43.6 149.0 L38.7 137.0 L28.0 117.0 L24.8 96.0 L22.3 85.0 L26.4 53.0 Z" />
+            <g class="hm-map-routes">
+              <path d="M76 175 Q 257 20 438 108" />
+              <path d="M76 175 Q 200 110 325 96" />
+              <path d="M76 175 Q 165 200 248 186" />
+              <path d="M76 175 Q 230 170 351 178" />
+              <path d="M438 108 Q 350 140 248 186" />
+              <path d="M438 108 Q 420 180 386 257" />
+            </g>
+            <g class="hm-map-hubs">
+              <circle cx="325" cy="96" r="4" /><circle cx="351" cy="178" r="4" /><circle cx="386" cy="257" r="4" />
+              <circle cx="261" cy="217" r="4" /><circle cx="183" cy="118" r="4" /><circle cx="40" cy="39" r="4" />
+            </g>
+            <g class="hm-map-wh"><circle cx="248" cy="186" r="5.5" /></g>
+            <g class="hm-map-office">
+              <circle cx="438" cy="108" r="7" /><circle cx="76" cy="175" r="7" />
+            </g>
+            <text x="452" y="104" class="hm-map-label">NY</text>
+            <text x="46" y="200" class="hm-map-label">CA</text>
+          </svg>
+        </div>
+
+        <div class="hm-offices stagger-reveal">
+          <div class="hm-office">
+            <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=600&q=70" alt="New York skyline" loading="lazy" />
+            <div class="hm-office-body">
+              <div class="hm-office-name"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 00-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 00-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg><span data-zh="纽约办公室">New York Office</span></div>
+              <div class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>12909 26th Ave Ste 305<br />Flushing, NY 11354</span></div>
+              <a href="tel:5169620966" class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><span>516-962-0966</span></a>
+              <div class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span data-zh="JFK 仓库">JFK Warehouse</span></div>
             </div>
           </div>
-          <div class="office-warehouse"><span class="warehouse-tag">JFK Warehouse</span></div>
-        </div>
 
-        <div class="office-card">
-          <div class="office-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="hm-office">
+            <img src="https://images.unsplash.com/photo-1515896769750-31548aa180ed?w=600&q=70" alt="Los Angeles skyline" loading="lazy" />
+            <div class="hm-office-body">
+              <div class="hm-office-name"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 00-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 00-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg><span data-zh="加利福尼亚办公室">California Office</span></div>
+              <div class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>22632 Golden Springs Dr<br />Unit 290<br />Diamond Bar, CA 91765</span></div>
+              <a href="mailto:info@senmartintl.com" class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>info@senmartintl.com</span></a>
+              <div class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span data-zh="LAX 仓库">LAX Warehouse</span></div>
+              <div class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span data-zh="DFW 仓库">DFW Warehouse</span></div>
+            </div>
           </div>
-          <div class="office-region" data-zh="加利福尼亚办公室">California Office</div>
-          <div class="office-address">22632 Golden Springs Dr, Unit 290<br />Diamond Bar, CA 91765</div>
-          <div class="office-contacts">
-            <a href="mailto:info@senmartintl.com" class="office-contact-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              info@senmartintl.com
-            </a>
-          </div>
-          <div class="office-warehouse">
-            <span class="warehouse-tag">LAX Warehouse</span>
-            <span class="warehouse-tag">DFW Warehouse</span>
-          </div>
-        </div>
 
-        <div class="office-card">
-          <div class="office-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div class="office-region" data-zh="中国办公室">China Office</div>
-          <div class="office-address" data-zh="广东省广州市<br />中国">Guangzhou, Guangdong<br />China</div>
-          <div class="office-contacts">
-            <a href="mailto:info@senmartintl.com" class="office-contact-row">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              info@senmartintl.com
-            </a>
+          <div class="hm-office">
+            <img src="https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?w=600&q=70" alt="China city skyline" loading="lazy" />
+            <div class="hm-office-body">
+              <div class="hm-office-name"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 00-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 00-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg><span data-zh="中国办公室">China Office</span></div>
+              <div class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-zh="广东省广州市<br />中国">Guangzhou, Guangdong<br />China</span></div>
+              <a href="mailto:info@senmartintl.com" class="hm-office-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>info@senmartintl.com</span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -375,11 +379,12 @@
             </ul>
           </div>
           <div class="footer-col">
-            <div class="footer-col-title" data-zh="联系方式">Locations</div>
-            <ul>
-              <li><a href="tel:5169620966">NY: 516-962-0966</a></li>
-              <li><a href="tel:7187322465">FAX: 718-732-2465</a></li>
-              <li><a href="mailto:info@senmartintl.com">info@senmartintl.com</a></li>
+            <div class="footer-col-title" data-zh="地址 / 联系方式">Locations / Contact</div>
+            <ul class="hm-footer-contact">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>12909 26th Ave Ste 305<br />Flushing, NY 11354</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:5169620966">516-962-0966</a></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg><a href="tel:7187322465">718-732-2465 (Fax)</a></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@senmartintl.com">info@senmartintl.com</a></li>
             </ul>
           </div>
         </div>
@@ -394,5 +399,3 @@
   <script src="main.js"></script>
 </body>
 </html>
-
-
