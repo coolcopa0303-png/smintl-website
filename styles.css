@@ -1614,7 +1614,7 @@ body.inner-page .hamburger span { background: var(--text); }
 
 /* ======================== PAGE BANNER ======================== */
 .page-banner {
-  background: linear-gradient(135deg, #001d40 0%, var(--accent-dark) 50%, #002855 100%);
+  background: linear-gradient(135deg, #F4F7FC 0%, #E8EFF9 100%);
   padding: calc(var(--nav-h) + 64px) 0 64px;
   position: relative;
   overflow: hidden;
@@ -1624,8 +1624,14 @@ body.inner-page .hamburger span { background: var(--text); }
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.07;
+  opacity: 0.55;
   pointer-events: none;
+}
+.page-banner-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(244,247,252,0.95) 0%, rgba(244,247,252,0.7) 40%, rgba(232,239,249,0.15) 80%, rgba(232,239,249,0) 100%);
 }
 .page-banner-inner { position: relative; z-index: 1; }
 .breadcrumb {
@@ -1635,29 +1641,29 @@ body.inner-page .hamburger span { background: var(--text); }
   font-family: var(--font-head);
   font-size: 0.8125rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 .breadcrumb a {
-  color: rgba(255,255,255,0.5);
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
-.breadcrumb a:hover { color: rgba(255,255,255,0.9); }
-.breadcrumb-sep { color: rgba(255,255,255,0.25); font-size: 0.75rem; }
-.breadcrumb-current { color: rgba(255,255,255,0.8); }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb-sep { color: var(--text-tertiary); font-size: 0.75rem; }
+.breadcrumb-current { color: var(--accent-dark); }
 .page-banner h1 {
   font-family: var(--font-head);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
-  color: #ffffff;
+  color: var(--accent-dark);
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
 .page-banner-desc {
   font-size: 1.0625rem;
-  color: rgba(255,255,255,0.68);
+  color: #2D3B55;
   max-width: 580px;
   line-height: 1.65;
 }
@@ -1953,6 +1959,7 @@ body.inner-page .hamburger span { background: var(--text); }
   .info-cards { grid-template-columns: 1fr; }
   .check-grid { grid-template-columns: 1fr; }
   .page-banner { padding: calc(var(--nav-h) + 40px) 0 40px; }
+  .page-banner-bg::after { background: rgba(244,247,252,0.78); }
 }
 
 /* ======================== HOME (v2 layout) ======================== */
