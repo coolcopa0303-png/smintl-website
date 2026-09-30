@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Small Freight — Sign In | Sen Mart International</title>
+  <meta name="description" content="Sign in to SMALL FREIGHT to track shipments, compare quotes, and manage freight online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner-page sfl-page">
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Sen Mart International" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-zh="首页">HOME</a></li>
+        <li><a href="freight-forwarding.html" class="nav-link" data-zh="货运代理">FREIGHT FORWARDING</a></li>
+        <li><a href="custom-brokerage.html" class="nav-link" data-zh="报关行">CUSTOM BROKERAGE</a></li>
+        <li><a href="intermodal.html" class="nav-link" data-zh="多式联运">INTERMODAL</a></li>
+        <li><a href="warehouse.html" class="nav-link" data-zh="仓储">WAREHOUSE</a></li>
+        <li><a href="track.html" class="nav-link" data-zh="货运追踪">TRACK</a></li>
+        <li><a href="small-freight-login.html" class="nav-link" data-zh="小货运输">SMALL FREIGHT</a></li>
+        <li><a href="small-port.html" class="nav-link">SMALL PORT</a></li>
+        <li><a href="about.html" class="nav-link" data-zh="关于我们">ABOUT US</a></li>
+        <li><a href="contact.html" class="nav-link" data-zh="联系我们">CONTACT</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul>
+      <li><a href="index.html" class="mobile-nav-link" data-zh="首页">HOME</a></li>
+      <li><a href="freight-forwarding.html" class="mobile-nav-link" data-zh="货运代理">FREIGHT FORWARDING</a></li>
+      <li><a href="custom-brokerage.html" class="mobile-nav-link" data-zh="报关行">CUSTOM BROKERAGE</a></li>
+      <li><a href="intermodal.html" class="mobile-nav-link" data-zh="多式联运">INTERMODAL</a></li>
+      <li><a href="warehouse.html" class="mobile-nav-link" data-zh="仓储">WAREHOUSE</a></li>
+      <li><a href="track.html" class="mobile-nav-link" data-zh="货运追踪">TRACK</a></li>
+      <li><a href="small-freight-login.html" class="mobile-nav-link" data-zh="小货运输">SMALL FREIGHT</a></li>
+      <li><a href="small-port.html" class="mobile-nav-link">SMALL PORT</a></li>
+      <li><a href="about.html" class="mobile-nav-link" data-zh="关于我们">ABOUT US</a></li>
+      <li><a href="contact.html" class="mobile-nav-link" data-zh="联系我们">CONTACT</a></li>
+      <li><a href="tel:5169620966" class="mobile-nav-link mobile-cta">516-962-0966</a></li>
+    </ul>
+  </div>
+
+
+  <!-- SMALL FREIGHT SIGN IN -->
+  <main class="sfl">
+    <section class="sfl-hero">
+      <div class="sfl-hero-text">
+        <h1 class="sfl-welcome"><span data-zh="欢迎使用">Welcome to</span><br />SMALL <em>FREIGHT</em></h1>
+        <p class="sfl-tagline" data-zh="在线追踪货物、比较报价、管理货运。">Track shipments, compare quotes, and manage freight online.</p>
+      </div>
+    </section>
+
+    <section class="sfl-panel">
+      <form class="sfl-card" id="sflForm" novalidate>
+        <div class="sfl-brand"><svg class="sfl-mark" viewBox="0 0 81 37.5" aria-hidden="true" focusable="false"><path fill="#0B52E1" fill-rule="evenodd" d="M38.13 37.5v-2.94h10.23l1.77 2.94zm15.51 0h11.87l-1.77-2.94H51.87zm15.38 0H81l-1.73-2.94H67.25zm8.52-5.88L61.99 5.15H49.58l15.9 26.47zM60.26 2.2 58.96 0H46.49l1.33 2.2zM42.98 0h-4.85v2.2h6.17zm19 31.62H50.1L38.13 11.68V5.15h7.94zm-23.85 0v-14.1l8.47 14.1z"/><path fill="#071B33" d="m.38 0 1.33 2.2h11.93L12.32 0zm15.45 0 1.33 2.2h17.56V0zM3.47 5.15l15.9 26.47h11.94L15.41 5.15zm15.45 0 3.42 5.68h6.87l5.5 9.13V5.15zM0 31.62h15.86l-2.93-4.88H6.01L0 16.74zm0 5.88h19.4l-1.77-2.94H0zm21.14-2.94 1.77 2.94h11.8v-.22l-1.63-2.72z"/></svg><span>SMALL <b>FREIGHT</b></span></div>
+        <div class="sfl-heading">
+          <h2 data-zh="登录">Sign in</h2>
+          <p data-zh="登录您的 SMALL FREIGHT 账户。">Access your SMALL FREIGHT account.</p>
+        </div>
+        <div class="sfl-field">
+          <label for="sflEmail" data-zh="邮箱地址">Email address</label>
+          <div class="sfl-control">
+            <span class="sfl-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <input type="email" id="sflEmail" autocomplete="email" required />
+          </div>
+        </div>
+        <div class="sfl-field">
+          <label for="sflPassword" data-zh="密码">Password</label>
+          <div class="sfl-control">
+            <span class="sfl-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <input type="password" id="sflPassword" autocomplete="current-password" required />
+            <button type="button" class="sfl-eye" id="sflEye" aria-label="Show password" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+        <div class="sfl-row">
+          <label class="sfl-check"><input type="checkbox" id="sflRemember" /><span data-zh="记住我">Remember me</span></label>
+          <button type="button" class="sfl-link" id="sflForgot" aria-expanded="false" data-zh="忘记密码？">Forgot password?</button>
+        </div>
+        <p class="sfl-notice" id="sflNotice" role="status" hidden></p>
+        <button type="submit" class="sfl-submit"><span data-zh="登录">Login</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+        <div class="sfl-divider"><span data-zh="需要帮助？">Need help?</span></div>
+        <a class="sfl-support" href="tel:5169620966"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg><span data-zh="联系客服">Contact Support</span></a>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo">
+            <img src="logo.png" alt="Sen Mart International" class="nav-logo-img footer-logo-img" />
+          </a>
+          <p class="footer-tagline" data-zh="自2013年起，您值得信赖的国际物流合作伙伴。">Your trusted international logistics partner since 2013.</p>
+        </div>
+        <div class="footer-links-wrap">
+          <div class="footer-col">
+            <div class="footer-col-title" data-zh="服务">Services</div>
+            <ul>
+              <li><a href="freight-forwarding.html" data-zh="空运">Air Freight</a></li>
+              <li><a href="freight-forwarding.html" data-zh="海运">Ocean Freight</a></li>
+              <li><a href="custom-brokerage.html" data-zh="报关行">Custom Brokerage</a></li>
+              <li><a href="intermodal.html" data-zh="多式联运">Intermodal Trucking</a></li>
+              <li><a href="warehouse.html" data-zh="仓储与物流">Warehouse & Logistics</a></li>
+              <li><a href="small-freight-login.html" data-zh="小货运输">Small Freight</a></li>
+              <li><a href="small-port.html">Small Port</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title" data-zh="公司">Company</div>
+            <ul>
+              <li><a href="about.html" data-zh="关于我们">About Us</a></li>
+              <li><a href="track.html" data-zh="货运追踪">Track Shipment</a></li>
+              <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title" data-zh="联系方式">Locations</div>
+            <ul>
+              <li><a href="tel:5169620966">NY: 516-962-0966</a></li>
+              <li><a href="tel:7187322465">FAX: 718-732-2465</a></li>
+              <li><a href="mailto:info@senmartintl.com">info@senmartintl.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-zh="版权所有 &copy; 2025 Sen Mart International。保留所有权利。">Copyright &copy; 2025 Sen Mart International. All Rights Reserved.</p>
+        <p class="footer-credit">Flushing, NY · Diamond Bar, CA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('sflForm');
+      var email = document.getElementById('sflEmail');
+      var pwd = document.getElementById('sflPassword');
+      var eye = document.getElementById('sflEye');
+      var remember = document.getElementById('sflRemember');
+      var notice = document.getElementById('sflNotice');
+      var KEY = 'sf.login.email';
+      var zh = function () { return document.documentElement.lang === 'zh' || document.documentElement.lang === 'zh-CN'; };
+      var say = function (en, cn) {
+        notice.innerHTML = zh() ? cn : en;
+        notice.hidden = false;
+      };
+      try {
+        var saved = localStorage.getItem(KEY);
+        if (saved) { email.value = saved; remember.checked = true; }
+      } catch (e) {}
+      eye.addEventListener('click', function () {
+        var show = pwd.type === 'password';
+        pwd.type = show ? 'text' : 'password';
+        eye.setAttribute('aria-pressed', String(show));
+        eye.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+      });
+      document.getElementById('sflForgot').addEventListener('click', function () {
+        say('To reset your password, please call customer support: <a href="tel:5169620966">(516) 962-0966</a>',
+            '如需重置密码，请致电客服：<a href="tel:5169620966">(516) 962-0966</a>');
+      });
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!email.value.trim() || !email.checkValidity()) { email.focus(); return; }
+        if (!pwd.value) { pwd.focus(); return; }
+        try {
+          if (remember.checked) localStorage.setItem(KEY, email.value.trim());
+          else localStorage.removeItem(KEY);
+        } catch (e2) {}
+        say('Online sign-in is not available yet. Please contact customer support: <a href="tel:5169620966">(516) 962-0966</a>',
+            '在线登录暂未开放，请联系客服：<a href="tel:5169620966">(516) 962-0966</a>');
+      });
+    })();
+  </script>
+</body>
+</html>
+
+
+
