@@ -2504,6 +2504,9 @@ a.hm-office-row:hover { color: var(--accent); }
 .sp-lfd .sp-muted { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* Driver board */
+/* Real screenshots in the app frame */
+.sp-shot { display: block; }
+.sp-shot img { display: block; width: 100%; height: auto; }
 .sp-app-board { --fs: 11px; }
 .sp-app-board .sp-main { padding: 14px 16px 16px; background: #ffffff; }
 .sp-board { display: grid; grid-template-columns: repeat(4, 1fr) 1.3fr; gap: 12px; align-items: start; }
