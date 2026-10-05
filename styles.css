@@ -320,6 +320,10 @@ button { font-family: inherit; }
   transition: background var(--transition-fast), border-color var(--transition-fast);
 }
 .nav-login:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+/* On wide screens the Log In button sits at the far right edge of the nav bar */
+@media (min-width: 1600px) {
+  .nav-login { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); }
+}
 .nav.scrolled .lang-toggle,
 body.inner-page .lang-toggle {
   color: var(--text-secondary);
