@@ -283,10 +283,10 @@ async function handleHeroTrack(e) {
       if (item.eta) lines.push(`ETA: ${item.eta}`);
       resultEl.textContent = lines.length ? lines.join('  ·  ') : 'Shipment found. Contact us for details.';
     } else {
-      resultEl.innerHTML = 'No results found for this shipment number. <a href="mailto:info@senmartintl.com">Contact us directly →</a>';
+      resultEl.innerHTML = 'No results found for this shipment number. <a href="mailto:shakeh@senmartintl.com">Contact us directly →</a>';
     }
   } catch (err) {
-    resultEl.innerHTML = 'Unable to connect to tracking system. Please <a href="mailto:info@senmartintl.com">email us</a> or call <a href="tel:5169620966">516-962-0966</a>.';
+    resultEl.innerHTML = 'Unable to connect to tracking system. Please <a href="mailto:shakeh@senmartintl.com">email us</a> or call <a href="tel:5169620966">516-962-0966</a>.';
   }
 }
 
