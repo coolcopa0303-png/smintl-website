@@ -305,9 +305,10 @@ button { font-family: inherit; }
   color: #ffffff;
   border-color: rgba(255,255,255,0.5);
 }
-/* Pin the menu next to the logo and the buttons to the right edge, so switching
-   between English and the shorter Chinese labels doesn't slide the nav around. */
-.nav-links { margin-right: auto; }
+/* The menu fills the fixed span between the logo and the buttons, so its first and
+   last items stay put when switching to the shorter Chinese labels. */
+.nav-links { flex: 1; justify-content: space-between; margin: 0 8px; }
+html { scrollbar-gutter: stable; }
 .nav-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; margin-left: auto; }
 .nav-login {
   font-family: var(--font-head);
