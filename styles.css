@@ -948,7 +948,9 @@ a.office-contact-row:hover { color: #60A5FA; }
 /* ======================== CONTACT ======================== */
 .contact-wrap {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin: 0 auto;
   gap: 80px;
   align-items: start;
 }

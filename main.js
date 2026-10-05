@@ -315,38 +315,6 @@ function handleTrack(e) {
   });
 }
 
-// ======================== CONTACT FORM ========================
-function handleContact(e) {
-  e.preventDefault();
-  const form = e.target;
-  const successMsg = document.getElementById('formSuccess');
-  const btn = form.querySelector('button[type="submit"]');
-
-  if (btn) {
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
-  }
-
-  // Simulate async submission
-  setTimeout(() => {
-    if (successMsg) {
-      successMsg.hidden = false;
-      successMsg.style.opacity = '0';
-      successMsg.style.transform = 'translateY(8px)';
-      requestAnimationFrame(() => {
-        successMsg.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-        successMsg.style.opacity = '1';
-        successMsg.style.transform = 'translateY(0)';
-      });
-    }
-    form.reset();
-    if (btn) {
-      btn.disabled = false;
-      btn.innerHTML = 'Send Inquiry <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-    }
-  }, 1200);
-}
-
 // ======================== SMOOTH ANCHOR SCROLL ========================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
