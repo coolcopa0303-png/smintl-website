@@ -3057,22 +3057,6 @@ a.hm-office-row:hover { color: var(--accent); }
 }
 
 /* ======================== WAREHOUSE PAGE ======================== */
-.wh-hero {
-  position: relative;
-  margin-top: var(--nav-h);
-  min-height: 520px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: #0A2248;
-}
-.wh-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.wh-hero::before {
-  content: '';
-  position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(90deg, rgba(8,28,60,0.92) 0%, rgba(8,28,60,0.72) 35%, rgba(8,28,60,0.15) 65%, rgba(8,28,60,0) 100%);
-}
-.wh-hero-inner { position: relative; z-index: 2; width: 100%; padding-top: 72px; padding-bottom: 72px; }
 .wh-hero-eyebrow {
   display: inline-block;
   font-family: var(--font-head);
@@ -3083,17 +3067,6 @@ a.hm-office-row:hover { color: var(--accent); }
   color: rgba(255,255,255,0.85);
   margin-bottom: 18px;
 }
-.wh-hero h1 {
-  font-family: var(--font-head);
-  font-size: clamp(2.2rem, 4.4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: #fff;
-  margin-bottom: 20px;
-}
-.wh-hero p { max-width: 460px; font-size: 1.0625rem; line-height: 1.6; color: rgba(255,255,255,0.88); margin-bottom: 32px; }
-.wh-btn { border-radius: var(--radius); }
 
 .wh-svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .wh-svc-card {
@@ -3225,8 +3198,7 @@ a.hm-office-row:hover { color: var(--accent); }
   .wh-step-arrow { display: none; }
 }
 @media (max-width: 768px) {
-  .wh-hero { min-height: 440px; }
-  .wh-hero::before, .wh-cta::before { background: rgba(8,28,60,0.75); }
+  .wh-cta::before { background: rgba(8,28,60,0.75); }
   .wh-split-text { padding: 0 20px; }
   .wh-va-grid { grid-template-columns: 1fr 1fr; }
 }
