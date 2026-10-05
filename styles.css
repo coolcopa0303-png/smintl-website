@@ -293,6 +293,8 @@ button { font-family: inherit; }
   border: 1px solid rgba(255,255,255,0.28);
   border-radius: 4px;
   padding: 5px 11px;
+  min-width: 48px;
+  text-align: center;
   cursor: pointer;
   transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
   white-space: nowrap;
@@ -303,7 +305,10 @@ button { font-family: inherit; }
   color: #ffffff;
   border-color: rgba(255,255,255,0.5);
 }
-.nav-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+/* Pin the menu next to the logo and the buttons to the right edge, so switching
+   between English and the shorter Chinese labels doesn't slide the nav around. */
+.nav-links { margin-right: auto; }
+.nav-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; margin-left: auto; }
 .nav-login {
   font-family: var(--font-head);
   font-size: 0.72rem;
@@ -315,6 +320,8 @@ button { font-family: inherit; }
   border: 1px solid var(--accent);
   border-radius: 4px;
   padding: 6px 14px;
+  min-width: 76px;
+  text-align: center;
   text-decoration: none;
   white-space: nowrap;
   transition: background var(--transition-fast), border-color var(--transition-fast);
