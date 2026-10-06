@@ -346,3 +346,31 @@ document.querySelectorAll('[data-slider]').forEach(slider => {
   goTo(0);
   start();
 });
+
+// ======================== SCREENSHOT LIGHTBOX ========================
+document.querySelectorAll('.sp-shot img').forEach(img => {
+  img.addEventListener('click', () => {
+    const box = document.createElement('div');
+    box.className = 'shot-lightbox';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.innerHTML = '<button type="button" class="shot-lightbox-close" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>';
+    const big = document.createElement('img');
+    big.src = img.currentSrc || img.src;
+    big.alt = img.alt;
+    box.appendChild(big);
+    document.body.appendChild(box);
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => box.classList.add('open'));
+    const close = () => {
+      box.remove();
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+      img.focus?.();
+    };
+    const onKey = e => { if (e.key === 'Escape') close(); };
+    box.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+    box.querySelector('button').focus();
+  });
+});

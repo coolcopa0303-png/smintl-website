@@ -3594,3 +3594,36 @@ body.sm-modal-open { overflow: hidden; }
   .sf-ports li:nth-child(odd) { border-left: 0; }
   .sf-ports li:nth-child(n+3) { border-top: 1px solid #E6ECF5; }
 }
+
+/* Small Freight: wider layout so the portal screenshots read at a useful size */
+.sf-page .sp-hero > .container,
+.sf-page .sp-feature > .container { max-width: 1440px; }
+.sf-page .sp-hero-grid { grid-template-columns: 0.78fr 1.22fr; gap: 48px; }
+.sf-page .sp-feature-grid { grid-template-columns: 0.6fr 1.4fr; gap: 56px; }
+.sf-page .sf-reverse { grid-template-columns: 1.4fr 0.6fr; }
+.sf-page .sf-shot-tall { max-width: 720px; justify-self: center; }
+@media (max-width: 1100px) {
+  .sf-page .sp-hero-grid, .sf-page .sp-feature-grid, .sf-page .sf-reverse { grid-template-columns: 1fr; }
+  .sf-page .sp-hero-app, .sf-page .sp-feature-grid .sp-app { max-width: none; }
+  .sf-page .sf-shot-tall { max-width: 720px; justify-self: start; }
+}
+
+/* Click-to-zoom for app screenshots */
+.sp-shot img { cursor: zoom-in; }
+.shot-lightbox {
+  position: fixed; inset: 0; z-index: 2100;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px; background: rgba(8, 22, 48, 0.82);
+  cursor: zoom-out; opacity: 0; transition: opacity 0.2s ease;
+}
+.shot-lightbox.open { opacity: 1; }
+.shot-lightbox img {
+  max-width: 100%; max-height: 100%; width: auto; height: auto;
+  border-radius: 10px; box-shadow: 0 30px 80px rgba(0,0,0,0.4); background: #fff;
+}
+.shot-lightbox-close {
+  position: absolute; top: 16px; right: 16px; width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  border: 0; border-radius: 50%; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer;
+}
+.shot-lightbox-close:hover { background: rgba(255,255,255,0.26); }
