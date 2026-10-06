@@ -91,7 +91,7 @@
         <li><a href="contact.html" class="nav-link" data-zh="联系我们">CONTACT</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="nav-login" data-zh="登录">Log In</a>
+        <button type="button" class="nav-login" data-auth-open data-zh="登录">Log In</button>
         <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
@@ -112,7 +112,7 @@
       <li><a href="small-port.html" class="mobile-nav-link">SMALL PORT</a></li>
       <li><a href="about.html" class="mobile-nav-link" data-zh="关于我们">ABOUT US</a></li>
       <li><a href="contact.html" class="mobile-nav-link" data-zh="联系我们">CONTACT</a></li>
-      <li><a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="mobile-nav-link" data-zh="登录 Small Freight">LOG IN — SMALL FREIGHT</a></li>
+      <li><a href="#login" class="mobile-nav-link" data-auth-open data-zh="客户登录">CUSTOMER LOG IN</a></li>
       <li><a href="tel:5169620966" class="mobile-nav-link mobile-cta">516-962-0966</a></li>
     </ul>
   </div>
@@ -136,6 +136,11 @@
     <div class="container">
       <div class="track-page-wrap">
 
+        <!-- MY SHIPMENTS (filled by auth.js) -->
+        <div id="my-shipments" class="sm-mine reveal">
+          <div id="myShipments"></div>
+        </div>
+
         <!-- Hero quick track (shipment + customer code) -->
         <div class="track-card-lg reveal">
           <h2 data-zh="货运查询">Shipment Lookup</h2>
@@ -152,7 +157,7 @@
               </div>
             </div>
           </form>
-          <div id="heroTrackResult" class="track-result" hidden></div>
+          <div id="heroTrackResult" class="sm-results" aria-live="polite" hidden></div>
 
           <div class="track-alt-help">
             <h3 data-zh="需要更详细的追踪信息？">Need More Detailed Tracking?</h3>
@@ -185,12 +190,7 @@
             </div>
             <button type="submit" class="btn-primary track-btn" data-zh="追踪">Track</button>
           </form>
-          <div id="trackResult" class="track-result" hidden>
-            <div class="track-result-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
-            <p data-zh="正在连接追踪系统，如需实时状态，请联系我们并提供参考编号。">Connecting to tracking system. For real-time status, please contact our team with your reference number.</p>
-          </div>
+          <div id="trackResult" class="sm-results" aria-live="polite" hidden></div>
         </div>
 
       </div>
@@ -245,6 +245,7 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="auth.js"></script>
 </body>
 </html>
 
