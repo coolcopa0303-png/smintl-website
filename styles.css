@@ -3685,7 +3685,7 @@ body.sm-modal-open { overflow: hidden; }
 .st-why-item h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 4px; }
 .st-why-item p { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.55; }
 
-.st-locations { display: grid; grid-template-columns: repeat(3, 1fr); background: #F5F8FE; border: 1px solid #E1E8F3; border-radius: 14px; }
+.st-locations { display: grid; grid-template-columns: repeat(3, 1fr); background: #fff; border: 1px solid #E1E8F3; border-radius: 14px; }
 .st-loc { display: flex; gap: 16px; padding: 28px 30px; color: var(--sp-blue); }
 .st-loc + .st-loc { border-left: 1px solid #E1E8F3; }
 .st-loc svg { flex-shrink: 0; margin-top: 2px; }
@@ -3728,3 +3728,31 @@ body.sm-modal-open { overflow: hidden; }
 /* Banner whose photo is already pale (contact page): show it at full strength, right-aligned */
 .page-banner--soft .page-banner-bg { opacity: 1; background-position: right center; }
 .page-banner--soft .page-banner-bg::after { background: linear-gradient(90deg, rgba(244,247,252,0.6) 0%, rgba(244,247,252,0) 50%); }
+
+/* Senmart Trucking: domestic / intermodal content */
+.st-split { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.st-split h2 { font-size: clamp(1.8rem, 2.8vw, 2.4rem); font-weight: 800; margin-bottom: 18px; }
+.st-split-text > p { color: var(--text-secondary); line-height: 1.75; margin-bottom: 14px; }
+.st-split-text .sp-checks { margin-top: 10px; }
+.st-split-text .sp-checks strong { color: var(--sp-ink); }
+.st-split-img img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; box-shadow: 0 24px 56px rgba(15,40,90,0.14); }
+.st-split-img img[src*="st-port"] { object-position: 72% center; }
+.st-split-rev .st-split-img img { object-position: 60% center; }
+.st-head .sp-kicker { margin-bottom: 8px; }
+.st-types { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.st-types li {
+  position: relative; padding: 16px 16px 16px 46px;
+  background: #fff; border: 1px solid #E1E8F3; border-radius: 10px;
+  font-family: var(--font-head); font-size: 0.9rem; font-weight: 600; color: var(--sp-ink);
+}
+.st-types li::before {
+  content: ""; position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--sp-blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+@media (max-width: 1100px) {
+  .st-split { grid-template-columns: 1fr; gap: 36px; }
+  .st-split-rev .st-split-img { order: 2; }
+  .st-types { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) { .st-types { grid-template-columns: 1fr; } }
