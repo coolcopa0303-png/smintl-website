@@ -3720,3 +3720,7 @@ body.sm-modal-open { overflow: hidden; }
   .sf-page .hamburger { display: flex; }
   .sf-page .nav-actions { margin-left: auto; }
 }
+
+/* Product page banners (Small Freight, Small Port, Senmart Trucking) share one content width */
+.sp-page .sp-hero > .container,
+.st-page .st-hero > .container { max-width: 1440px; }
