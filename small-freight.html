@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Small Freight — Sen Mart International</title>
-  <meta name="description" content="LTL, small parcel, and courier services. Consolidation, UPS Ground, FedEx Freight, and last-mile delivery for smaller consignments." />
+  <title>Small Freight — Logistics Information Portal | Sen Mart International</title>
+  <meta name="description" content="SMALL FREIGHT is Sen Mart International's online logistics portal: shipment tracking, LTL and drayage quotes, HTS duty calculator and analytics in one place." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="inner-page">
+<body class="inner-page sp-page sf-page">
 
   <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -26,12 +26,13 @@
         <li><a href="intermodal.html" class="nav-link" data-zh="多式联运">INTERMODAL</a></li>
         <li><a href="warehouse.html" class="nav-link" data-zh="仓储">WAREHOUSE</a></li>
         <li><a href="track.html" class="nav-link" data-zh="货运追踪">TRACK</a></li>
-        <li><a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="nav-link" data-zh="小货运输">SMALL FREIGHT</a></li>
+        <li><a href="small-freight.html" class="nav-link" data-zh="小货运输">SMALL FREIGHT</a></li>
         <li><a href="small-port.html" class="nav-link">SMALL PORT</a></li>
         <li><a href="about.html" class="nav-link" data-zh="关于我们">ABOUT US</a></li>
         <li><a href="contact.html" class="nav-link" data-zh="联系我们">CONTACT</a></li>
       </ul>
       <div class="nav-actions">
+        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="nav-portal"><span data-zh="进入后台">Portal</span> <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><polyline points="8 7 17 7 17 16"/></svg></a>
         <button type="button" class="nav-login" data-auth-open data-zh="登录">Log In</button>
         <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
       </div>
@@ -49,102 +50,310 @@
       <li><a href="intermodal.html" class="mobile-nav-link" data-zh="多式联运">INTERMODAL</a></li>
       <li><a href="warehouse.html" class="mobile-nav-link" data-zh="仓储">WAREHOUSE</a></li>
       <li><a href="track.html" class="mobile-nav-link" data-zh="货运追踪">TRACK</a></li>
-      <li><a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="mobile-nav-link" data-zh="小货运输">SMALL FREIGHT</a></li>
+      <li><a href="small-freight.html" class="mobile-nav-link" data-zh="小货运输">SMALL FREIGHT</a></li>
       <li><a href="small-port.html" class="mobile-nav-link">SMALL PORT</a></li>
       <li><a href="about.html" class="mobile-nav-link" data-zh="关于我们">ABOUT US</a></li>
       <li><a href="contact.html" class="mobile-nav-link" data-zh="联系我们">CONTACT</a></li>
+      <li><a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="mobile-nav-link" data-zh="进入 Small Freight 后台 ↗">SMALL FREIGHT PORTAL ↗</a></li>
       <li><a href="#login" class="mobile-nav-link" data-auth-open data-zh="客户登录">CUSTOMER LOG IN</a></li>
       <li><a href="tel:5169620966" class="mobile-nav-link mobile-cta">516-962-0966</a></li>
     </ul>
   </div>
 
-  <!-- PAGE BANNER -->
-  <div class="page-banner">
-    <div class="page-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&q=80');"></div>
-    <div class="container page-banner-inner">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a>
-        <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current" data-zh="小货运输">Small Freight</span>
-      </div>
-      <h1 data-zh="小货运输">Small Freight</h1>
-      <p class="page-banner-desc" data-zh="灵活的LTL及包裹解决方案——经济高效的整合服务，不牺牲速度与可靠性。">Flexible LTL and parcel solutions for smaller shipments — cost-effective consolidation without sacrificing speed or reliability.</p>
-    </div>
-  </div>
-
-  <!-- OVERVIEW -->
-  <section class="page-section">
-    <div class="container">
-      <div class="two-col-content">
-        <div class="content-block">
-          <span class="eyebrow reveal" data-zh="小包裹与零担">Small Parcel & LTL</span>
-          <h2 class="reveal" data-zh="每一批货物都值得同样的关注">Every Shipment Deserves the Same Attention</h2>
-          <p class="reveal" data-zh="不是每批货物都能装满一个整箱或整车。Sen Mart International提供灵活的小货及零担（LTL）解决方案，在不牺牲速度或可靠性的前提下，经济高效地运输小批量货物。">Not every shipment fills a full container or truck. Sen Mart International offers flexible small freight and Less-than-Truckload (LTL) solutions designed to move smaller consignments cost-effectively without sacrificing speed or reliability.</p>
-          <p class="reveal" data-zh="无论您需要运输单个托盘、几箱货物还是小快递，我们的承运商网络和整合服务都确保您的小批货物获得与整柜货同等的关注和照料。">Whether you need a single pallet, a few boxes, or a small courier delivery, our network of carriers and consolidation services ensure your small shipment receives the same attention and care as a full container load.</p>
-          <p class="reveal" data-zh="我们在美国的三个仓储地点（LAX、JFK、DFW）作为整合枢纽——我们将您的小批量货物与同向运输的货物合并，大幅降低您的单件运输成本。">Our three US warehouse locations (LAX, JFK, DFW) serve as consolidation hubs — we combine your smaller loads with others moving in the same direction, dramatically reducing your per-unit shipping cost.</p>
-          <ul class="feature-list stagger-reveal">
-            <li>
-              <span class="feature-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              <span data-zh="零担（LTL）运输——全国国内服务">Less-than-Truckload (LTL) shipping — domestic nationwide</span>
-            </li>
-            <li>
-              <span class="feature-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              <span data-zh="小包裹及快递配送，适用于单件箱包">Small parcel & courier delivery for individual boxes and packages</span>
-            </li>
-            <li>
-              <span class="feature-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              <span data-zh="整合服务——合并货物，大幅节省成本">Consolidation service — merge loads for significant cost savings</span>
-            </li>
-            <li>
-              <span class="feature-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              <span data-zh="UPS Ground和FedEx Freight全国配送">UPS Ground and FedEx Freight nationwide distribution</span>
-            </li>
-            <li>
-              <span class="feature-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              <span data-zh="从我们的仓储网络提供本地提货和末端配送">Local pickup & last-mile delivery from our warehouse network</span>
-            </li>
-            <li>
-              <span class="feature-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-              <span data-zh="针对小批量货物优化的具有竞争力的定价">Competitive pricing optimized for smaller load volumes</span>
-            </li>
-          </ul>
+  <!-- ======================== HERO ======================== -->
+  <section class="sp-hero sf-hero">
+    <img src="image/sf-hero.jpg" alt="" class="sp-hero-bg sf-hero-bg" />
+    <div class="container sp-hero-grid">
+      <div class="sp-hero-text">
+        <div class="sf-brand reveal">
+          <img src="image/sf-logo.svg" width="81" height="38" alt="" />
+          <span>SMALL <b>FREIGHT</b></span>
         </div>
-        <div class="two-col-img reveal">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Small freight and parcel delivery" loading="lazy" />
+        <span class="sp-kicker reveal" data-zh="全球物流信息门户">Global Logistics Information Portal</span>
+        <h1 class="reveal" data-zh='您的全部物流信息，<span class="sf-accent">尽在一处</span>'>All Your Logistics Information <span class="sf-accent">in One Place</span></h1>
+        <p class="sp-lead reveal" data-zh="实时可视化、即时报价、关税计算与强大的数据分析——专为全球托运人打造。">Real-time visibility, instant quotes, duty calculations and powerful analytics — built for global shippers.</p>
+        <div class="sp-actions reveal">
+          <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary"><span data-zh="进入门户">Open the Portal</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="track.html" class="sp-btn sp-btn-outline" data-zh="追踪货物">Track a Shipment</a>
+        </div>
+        <ul class="sp-checks sf-checks-row reveal">
+          <li data-zh="实时数据">Real-time data</li>
+          <li data-zh="全球覆盖">Global coverage</li>
+          <li data-zh="专为托运人打造">Built for shippers</li>
+        </ul>
+      </div>
+
+      <div class="sp-app sp-shot sp-hero-app reveal">
+        <img src="image/sf-shot-dashboard.webp" width="1800" height="950" alt="SMALL FREIGHT dashboard with shipment search, LTL and drayage quote forms, HTS search, recent shipments and a shipment overview chart" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MODULES ======================== -->
+  <section class="sf-modules">
+    <div class="container sf-mod-grid stagger-reveal">
+      <div class="sf-mod">
+        <span class="sf-mod-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span>
+        <b data-zh="货物追踪">Shipment Tracking</b>
+        <span data-zh="海运、卡车与清关全程实时可视。">Real-time ocean, truck and customs visibility.</span>
+      </div>
+      <div class="sf-mod">
+        <span class="sf-mod-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+        <b data-zh="LTL 与拖车报价">LTL &amp; Drayage Quotes</b>
+        <span data-zh="即时比较主流承运商的价格。">Compare rates from top carriers instantly.</span>
+      </div>
+      <div class="sf-mod">
+        <span class="sf-mod-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/><line x1="16" y1="11" x2="16" y2="11.01"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/><line x1="16" y1="15" x2="16" y2="18"/><line x1="8" y1="18" x2="12" y2="18"/></svg></span>
+        <b data-zh="HTS / 关税计算">HTS / Duty Calculator</b>
+        <span data-zh="估算关税与到岸成本。">Estimate duties and landed costs.</span>
+      </div>
+      <div class="sf-mod">
+        <span class="sf-mod-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+        <b data-zh="清关可视">Customs Visibility</b>
+        <span data-zh="追踪清关状态与关键节点。">Track clearance status and key milestones.</span>
+      </div>
+      <div class="sf-mod">
+        <span class="sf-mod-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="3" y1="20" x2="21" y2="20"/></svg></span>
+        <b data-zh="分析与报表">Analytics &amp; Reporting</b>
+        <span data-zh="用数据驱动更明智的决策。">Turn data into smarter decisions.</span>
+      </div>
+      <div class="sf-mod">
+        <span class="sf-mod-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span>
+        <b data-zh="7×24 在线访问">24/7 Online Access</b>
+        <span data-zh="随时随地管理您的货物。">Manage your shipments anytime, anywhere.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== WHY / BENEFITS ======================== -->
+  <section class="sp-feature sf-intro">
+    <div class="container sf-intro-grid">
+      <div class="sp-feature-text">
+        <span class="sp-kicker reveal" data-zh="为全球托运人打造">Built for Global Shippers</span>
+        <h2 class="reveal" data-zh="物流更简单，<br />掌控更全面。">Simpler Logistics.<br />Greater Control.</h2>
+        <p class="reveal" data-zh="SMALL FREIGHT 为您提供管理货物所需的工具、可视化与支持——海运、卡车与清关，尽在一处，让您更有信心地运输货物。">SMALL FREIGHT gives you the tools, visibility and support you need to move cargo with confidence across ocean, truck and customs — all in one place.</p>
+        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary reveal"><span data-zh="立即开始">Get Started</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="sf-benefits stagger-reveal">
+        <div class="sf-benefit">
+          <img src="image/sf-packing.jpg" alt="Warehouse worker packing a carton" loading="lazy" />
+          <div>
+            <b data-zh="节省时间">Save Time</b>
+            <span data-zh="自助式工具让日常物流工作更高效。">Self-service tools that streamline your logistics workflow.</span>
+          </div>
+        </div>
+        <div class="sf-benefit">
+          <img src="image/sf-loading.jpg" alt="Forklift loading pallets into a trailer at a dock door" loading="lazy" />
+          <div>
+            <b data-zh="降低成本">Reduce Costs</b>
+            <span data-zh="比较报价，提前估算到岸成本。">Compare rates and estimate total landed costs upfront.</span>
+          </div>
+        </div>
+        <div class="sf-benefit">
+          <img src="image/sf-yard.jpg" alt="Inspector checking containers in a port yard" loading="lazy" />
+          <div>
+            <b data-zh="提升可视化">Increase Visibility</b>
+            <span data-zh="实时更新与关键节点，追踪每一票货物。">Track every shipment with real-time updates and key milestones.</span>
+          </div>
+        </div>
+        <div class="sf-benefit">
+          <img src="image/sf-ocean.jpg" alt="Container ship leaving a port" loading="lazy" />
+          <div>
+            <b data-zh="放心运输">Ship with Confidence</b>
+            <span data-zh="行业经验与专属客服团队全程支持。">Backed by industry expertise and dedicated customer support.</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHEN TO USE -->
-  <section class="page-section page-section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow" data-zh="何时使用小货运输">When to Use Small Freight</span>
-        <h2 data-zh="小批量货物的最佳解决方案">The Right Solution for Smaller Loads</h2>
-        <p class="section-desc" data-zh="小货运输服务填补了快递包裹与整车运输之间的空缺——非常适合许多常见的运输场景。">Small freight services fill the gap between courier packages and full truckloads — ideal for many common shipping scenarios.</p>
+  <!-- ======================== TRACKING ======================== -->
+  <section class="sp-feature sp-feature-alt">
+    <div class="container sp-feature-grid">
+      <div class="sp-feature-text">
+        <span class="sp-kicker reveal" data-zh="端到端可视">End-to-End Visibility</span>
+        <h2 class="reveal" data-zh="从起运地到目的地的<br />全程货物追踪">Shipment Tracking<br />from Origin to Delivery</h2>
+        <p class="reveal" data-zh="追踪海运、卡车与清关全程，实时查看状态更新、预计到港时间以及完整的货物详情。">Track your shipments across ocean, truck and customs with real-time status updates, ETAs and full shipment details.</p>
+        <ul class="sp-checks sp-checks-lined reveal">
+          <li data-zh="按提单、柜号或参考号搜索">Search by B/L, container or reference</li>
+          <li data-zh="实时节点更新">Real-time milestone updates</li>
+          <li data-zh="预计到达时间（ETA）">Estimated time of arrival (ETA)</li>
+          <li data-zh="查看货物历史与单证">Access shipment history and documents</li>
+        </ul>
+        <a href="track.html" class="sp-btn sp-btn-primary sf-feature-btn reveal"><span data-zh="追踪货物">Track a Shipment</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
-      <div class="info-cards stagger-reveal">
-        <div class="info-card">
-          <div class="info-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-          </div>
-          <h3 data-zh="进口整合">Import Consolidation</h3>
-          <p data-zh="海运或空运进口货物太少，不足以装满整个货柜？我们在仓库进行拆柜，并直接配送至您的收货方或设施。">Ocean or air imports that are too small for a full container? We deconsolidate at our warehouse and distribute directly to your recipients or facilities.</p>
+      <div class="sp-app sp-shot reveal">
+        <img src="image/sf-shot-shipments.webp" width="1800" height="950" alt="Shipment detail with a milestone bar from Booked to Delivered, route map from Hamburg to Long Beach, tracking history and shipment details" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== HOW IT WORKS ======================== -->
+  <section class="sp-solutions sf-how">
+    <div class="container">
+      <div class="sp-center-head reveal">
+        <span class="sp-kicker" data-zh="简单 · 高效 · 强大">Simple. Efficient. Powerful.</span>
+        <h2 data-zh='SMALL <span class="sf-accent">FREIGHT</span> 如何运作'>How SMALL <span class="sf-accent">FREIGHT</span> Works</h2>
+        <p data-zh="从追踪、报价到关税计算，您需要的一切只需几次点击。">From tracking to quotes to duty calculations, everything you need is just a few clicks away.</p>
+      </div>
+      <ol class="sf-steps stagger-reveal">
+        <li class="sf-step">
+          <span class="sf-step-num">1</span>
+          <span class="sf-step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+          <b data-zh="搜索 / 追踪">Search / Track</b>
+          <span data-zh="通过提单、柜号或参考号查询您的货物。">Look up your shipments by B/L, container or reference number.</span>
+        </li>
+        <li class="sf-step">
+          <span class="sf-step-num">2</span>
+          <span class="sf-step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span>
+          <b data-zh="报价 / 比较">Quote / Compare</b>
+          <span data-zh="获取可信承运商的即时 LTL 与拖车报价。">Get instant LTL and drayage quotes from trusted carriers.</span>
+        </li>
+        <li class="sf-step">
+          <span class="sf-step-num">3</span>
+          <span class="sf-step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11.01"/><line x1="12" y1="11" x2="12" y2="11.01"/><line x1="16" y1="11" x2="16" y2="11.01"/><line x1="8" y1="15" x2="8" y2="15.01"/><line x1="12" y1="15" x2="12" y2="15.01"/><line x1="16" y1="15" x2="16" y2="18"/><line x1="8" y1="18" x2="12" y2="18"/></svg></span>
+          <b data-zh="计算关税">Calculate Duties</b>
+          <span data-zh="按 HTS 编码估算关税与到岸成本。">Estimate duties and landed costs by HTS code.</span>
+        </li>
+        <li class="sf-step">
+          <span class="sf-step-num">4</span>
+          <span class="sf-step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="3" y1="20" x2="21" y2="20"/></svg></span>
+          <b data-zh="分析 / 管理">Analyze / Manage</b>
+          <span data-zh="监控货物进度，并获得专业客服支持。">Monitor shipment progress and get expert customer support.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======================== LTL QUOTES ======================== -->
+  <section class="sp-feature sp-feature-alt">
+    <div class="container sp-feature-grid sf-reverse">
+      <div class="sp-feature-text">
+        <span class="sp-kicker reveal" data-zh="有竞争力的价格">Competitive Rates</span>
+        <h2 class="reveal" data-zh="LTL 报价，从未如此简单">LTL Quotes Made Simple</h2>
+        <p class="reveal" data-zh="获取主流承运商的实时 LTL 报价。比较价格、查看运输时效，为您的货物选择最优方案。">Get instant LTL quotes with real-time rates from trusted carriers. Compare options, view transit times and select the best solution for your shipment.</p>
+        <ul class="sp-checks sp-checks-lined reveal">
+          <li data-zh="多家承运商可选">Multiple carrier options</li>
+          <li data-zh="价格透明">Transparent pricing</li>
+          <li data-zh="预估运输时效">Estimated transit times</li>
+          <li data-zh="便捷的在线下单">Easy online booking</li>
+        </ul>
+        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary sf-feature-btn reveal"><span data-zh="获取 LTL 报价">Get an LTL Quote</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="sp-app sp-shot reveal">
+        <img src="image/sf-shot-ltl.webp" width="1800" height="950" alt="LTL quote from College Point, NY to Chicago, IL with a route map, route details and six carrier rates" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== DRAYAGE ======================== -->
+  <section class="sp-feature sf-drayage">
+    <img src="image/sf-truck.jpg" alt="" class="sf-section-bg" loading="lazy" />
+    <div class="container sp-feature-grid">
+      <div class="sp-feature-text">
+        <span class="sp-kicker reveal" data-zh="港口到门">Port-to-Door Solutions</span>
+        <h2 class="reveal" data-zh="覆盖美国主要港口的<br />拖车报价">Drayage Quotes Across<br />Major U.S. Ports</h2>
+        <p class="reveal" data-zh="获取透明、有竞争力的拖车价格和可靠的服务，覆盖美国主要港口及内陆铁路场站。">Get competitive drayage pricing with transparent rates and reliable service across major U.S. ports and inland rail ramps.</p>
+        <ul class="sp-checks sp-checks-lined reveal">
+          <li data-zh="港口到门、门到门配送">Port-to-door and door-to-door delivery</li>
+          <li data-zh="实时报价与运输时效">Real-time quotes and transit times</li>
+          <li data-zh="附加费用一目了然">Accessorial charges shown upfront</li>
+          <li data-zh="经验丰富的物流团队支持">Support from an experienced logistics team</li>
+        </ul>
+        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary sf-feature-btn reveal"><span data-zh="获取拖车报价">Get a Drayage Quote</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="sp-app sp-shot reveal">
+        <img src="image/sf-shot-dray.webp" width="1800" height="950" alt="Drayage quote from the Port of Los Angeles to Ontario, CA with base rate, chassis, estimated total and route map" loading="lazy" />
+      </div>
+    </div>
+    <div class="container">
+      <ul class="sf-ports stagger-reveal">
+        <li><b>Los Angeles</b><span>LA / LB</span></li>
+        <li><b>New York</b><span>NY / NJ</span></li>
+        <li><b>Savannah</b><span>SAV</span></li>
+        <li><b>Houston</b><span>HOU</span></li>
+        <li><b>Seattle</b><span>SEA</span></li>
+        <li><b>Oakland</b><span>OAK</span></li>
+        <li><b>Charleston</b><span>CHS</span></li>
+        <li><b>Baltimore</b><span>BAL</span></li>
+      </ul>
+      <p class="sf-ports-note reveal" data-zh="另有内陆铁路场站：芝加哥、达拉斯、亚特兰大、孟菲斯、堪萨斯城、辛辛那提、盐湖城、迈阿密、坦帕。">Plus inland rail ramps: Chicago, Dallas, Atlanta, Memphis, Kansas City, Cincinnati, Salt Lake City, Miami and Tampa.</p>
+    </div>
+  </section>
+
+  <!-- ======================== HTS / DUTY ======================== -->
+  <section class="sp-feature sp-feature-alt">
+    <div class="container sp-feature-grid sf-reverse">
+      <div class="sp-feature-text">
+        <span class="sp-kicker reveal" data-zh="放心进口">Import with Confidence</span>
+        <h2 class="reveal" data-zh="HTS / 关税计算器">HTS / Duty Calculator</h2>
+        <p class="reveal" data-zh="查询 HTS 编码，计算预估关税、税费与到岸成本。">Look up HTS codes and calculate estimated duties, taxes and landed costs for your shipments.</p>
+        <ul class="sp-checks sp-checks-lined reveal">
+          <li data-zh="搜索 HTS 编码与税率">Search HTS codes and duty rates</li>
+          <li data-zh="计算总关税与各项费用">Calculate total duties and fees</li>
+          <li data-zh="支持 301 等附加关税">Section 301 and other additional duties</li>
+          <li data-zh="保存计算结果供日后参考">Save calculations for reference</li>
+        </ul>
+        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary sf-feature-btn reveal"><span data-zh="试用关税计算器">Try the HTS Calculator</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="sp-app sp-shot reveal">
+        <img src="image/sf-shot-hts.webp" width="1800" height="950" alt="Duty calculator for HTS 4202.92.3120 showing a 42.6% duty rate, cost breakdown and landed cost" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ANALYTICS ======================== -->
+  <section class="sp-feature">
+    <div class="container sp-feature-grid">
+      <div class="sp-feature-text">
+        <span class="sp-kicker reveal" data-zh="让数据产生洞察">Turn Data into Insights</span>
+        <h2 class="reveal" data-zh="分析与报表">Analytics &amp; Reporting</h2>
+        <p class="reveal" data-zh="全面了解您的货运量、进度与服务使用情况。">Get a complete view of your shipment volume, progress and service usage with powerful analytics.</p>
+        <ul class="sp-checks sp-checks-lined reveal">
+          <li data-zh="追踪货运量与趋势">Track shipment volume and trends</li>
+          <li data-zh="查看状态分布与服务构成">View status breakdowns and service mix</li>
+          <li data-zh="发现优化机会">Identify opportunities to improve</li>
+          <li data-zh="导出并分享报表">Export and share reports</li>
+        </ul>
+        <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary sf-feature-btn reveal"><span data-zh="查看分析">View Analytics</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="sp-app sp-shot reveal">
+        <img src="image/sf-shot-analytics.webp" width="1800" height="950" alt="Analytics with total, active and delivered shipment counts, shipments by ETA month, status distribution, service mix and mode mix" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== WHY CHOOSE ======================== -->
+  <section class="sp-solutions sf-why">
+    <div class="container">
+      <div class="sp-center-head reveal">
+        <span class="sp-kicker" data-zh="全球托运人的信赖之选">Trusted by Global Shippers</span>
+        <h2 data-zh='为什么选择 SMALL <span class="sf-accent">FREIGHT</span>'>Why Choose SMALL <span class="sf-accent">FREIGHT</span></h2>
+      </div>
+      <div class="sp-sol-grid stagger-reveal">
+        <div class="sp-sol"><span class="sp-sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3 data-zh="实时可视">Real-Time Visibility</h3><p data-zh="海运、卡车与清关的端到端追踪。">End-to-end tracking across ocean, truck and customs.</p></div></div>
+        <div class="sp-sol"><span class="sp-sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><div><h3 data-zh="自助工具">Self-Service Tools</h3><p data-zh="报价、追踪、关税计算与分析，一站完成。">Quotes, tracking, duty calculator and analytics — all online.</p></div></div>
+        <div class="sp-sol"><span class="sp-sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><div><h3 data-zh="清关支持">Customs Support</h3><p data-zh="随时了解清关进度与单证情况。">Stay informed with clearance updates and documentation.</p></div></div>
+        <div class="sp-sol"><span class="sp-sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><div><h3 data-zh="多式联运物流">Multi-Service Logistics</h3><p data-zh="海运、LTL、拖车等服务，整合在一个平台。">Ocean, LTL, drayage and more — in one integrated platform.</p></div></div>
+        <div class="sp-sol"><span class="sp-sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></span><div><h3 data-zh="专家支持">Expert Support</h3><p data-zh="自 2013 年起服务进出口客户的物流团队。">Backed by a logistics team serving importers since 2013.</p></div></div>
+        <div class="sp-sol"><span class="sp-sol-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span><div><h3 data-zh="安全可靠">Secure &amp; Reliable</h3><p data-zh="账户登录访问，您的数据受到保护。">Account-based access keeps your shipment data protected.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== GET STARTED ======================== -->
+  <section class="sp-start sf-start">
+    <div class="container">
+      <div class="sp-start-box sf-start-box reveal">
+        <img src="image/sf-harbor.jpg" alt="" class="sf-start-bg" loading="lazy" />
+        <div class="sp-start-main">
+          <span class="sp-kicker" data-zh="立即开始">Get Started Today</span>
+          <h2 data-zh="准备好简化您的物流了吗？">Ready to Simplify Your Logistics?</h2>
+          <p data-zh="登录 SMALL FREIGHT，获取实时可视、有竞争力的报价与强大的分析工具。还没有账号？联系我们即可开通。">Log in to SMALL FREIGHT for real-time visibility, competitive quotes and powerful analytics. No account yet? Contact us and we'll set one up.</p>
         </div>
-        <div class="info-card">
-          <div class="info-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3 data-zh="国内补货">Domestic Replenishment</h3>
-          <p data-zh="在您的仓库、门店之间或向亚马逊FBA仓库定期发送小批量货物。定期提货让您的库存持续流转。">Regular smaller shipments between your facilities, stores, or to Amazon FBA warehouses. Scheduled pickups keep your inventory flowing.</p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3 data-zh="紧急样品运输">Urgent Sample Shipments</h3>
-          <p data-zh="产品样品、展会材料和时效性强的小批量货物，需要有保障的交付，但无需支付整车运费。">Product samples, trade show materials, and time-sensitive small lots that need guaranteed delivery without paying full truck rates.</p>
+        <div class="sp-start-cta">
+          <a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" class="sp-btn sp-btn-primary sp-btn-block"><span data-zh="进入门户">Open the Portal</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="contact.html" class="sp-btn sp-btn-outline sp-btn-block" data-zh="申请账号 / 预约演示">Request an Account or Demo</a>
         </div>
       </div>
     </div>
@@ -168,7 +377,7 @@
               <li><a href="custom-brokerage.html" data-zh="报关行">Custom Brokerage</a></li>
               <li><a href="intermodal.html" data-zh="多式联运">Intermodal Trucking</a></li>
               <li><a href="warehouse.html" data-zh="仓储与物流">Warehouse & Logistics</a></li>
-              <li><a href="https://coolcopa0303-png.github.io/smallfreight/login/" target="_blank" rel="noopener" data-zh="小货运输">Small Freight</a></li>
+              <li><a href="small-freight.html" data-zh="小货运输">Small Freight</a></li>
               <li><a href="small-port.html">Small Port</a></li>
             </ul>
           </div>
@@ -201,6 +410,3 @@
   <script src="auth.js"></script>
 </body>
 </html>
-
-
-
