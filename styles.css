@@ -3627,20 +3627,3 @@ body.sm-modal-open { overflow: hidden; }
   border: 0; border-radius: 50%; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer;
 }
 .shot-lightbox-close:hover { background: rgba(255,255,255,0.26); }
-
-/* Small Freight: full-width screenshots — heading row on top, image below */
-.sf-hero { padding-bottom: 64px; }
-.sf-hero-text { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px 64px; align-items: end; margin-bottom: 44px; }
-.sf-hero-text h1 { margin-bottom: 0; }
-.sf-hero-side .sp-lead { max-width: none; margin-bottom: 24px; }
-.sf-hero-side .sp-actions { margin-bottom: 22px; }
-.sf-hero-stack .sp-hero-app { max-width: none; }
-.sf-modules { margin-top: 0; padding-top: 48px; }
-.sf-wide-head { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 72px; align-items: end; margin-bottom: 40px; }
-.sf-wide-head .sp-feature-text p { margin-bottom: 0; }
-.sf-wide-side .sf-feature-btn { margin-top: 24px; }
-.sf-wide > .sp-shot { width: 100%; }
-@media (max-width: 900px) {
-  .sf-hero-text, .sf-wide-head { grid-template-columns: 1fr; }
-  .sf-modules { padding-top: 32px; }
-}
