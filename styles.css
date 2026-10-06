@@ -3487,7 +3487,13 @@ body.sm-modal-open { overflow: hidden; }
   transition: background var(--transition-fast), color var(--transition-fast);
 }
 .nav-portal:hover { background: var(--accent); color: #fff; }
-@media (max-width: 480px) { .nav-portal { display: none; } }
+@media (max-width: 480px) {
+  .nav-actions { gap: 6px; }
+  .nav-portal, .nav-login { padding: 5px 9px; font-size: 0.66rem; letter-spacing: 0.04em; }
+  .nav-portal svg { width: 10px; height: 10px; }
+  .lang-toggle { padding: 4px 8px; }
+  .nav-logo-img { height: 38px; }
+}
 
 /* Hero */
 .sf-hero-bg { height: 70%; opacity: 0.3; object-position: center 60%; }
@@ -3714,12 +3720,6 @@ body.sm-modal-open { overflow: hidden; }
   .st-gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; gap: 10px; }
 }
 
-/* Small Freight has an extra Portal button in the nav, so it needs the hamburger menu sooner */
-@media (max-width: 1599px) {
-  .sf-page .nav-links { display: none; }
-  .sf-page .hamburger { display: flex; }
-  .sf-page .nav-actions { margin-left: auto; }
-}
 
 /* Product page banners (Small Freight, Small Port, Senmart Trucking) share one content width */
 .sp-page .sp-hero > .container,
@@ -3756,3 +3756,11 @@ body.sm-modal-open { overflow: hidden; }
   .st-types { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 480px) { .st-types { grid-template-columns: 1fr; } }
+
+/* Very narrow phones: keep logo, Portal, Log In, language and menu on one line */
+@media (max-width: 380px) {
+  .nav > .container { padding: 0 14px; }
+  .nav-logo-img { height: 32px; }
+  .nav-portal svg { display: none; }
+  .nav-actions { gap: 5px; }
+}
